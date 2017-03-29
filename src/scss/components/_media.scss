@@ -1,0 +1,36 @@
+@media (max-width: 1200px) {
+  #photos {
+  column-count: 4 !important;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  column-count: 3 !important;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  column-count: 2 !important;
+  }
+  	.col-s-12{
+		width: 100% !important;
+	}
+}
+@media (max-width: 400px) {
+  #photos {
+  column-count: 1 !important;
+  }
+  .col-xs-12{
+  	width: 100% !important;
+  }
+ .right{
+  	display: none;
+  }
+  .left{
+  	text-align: center;
+  }
+  .hamburger{
+  	display: block !important;
+  	float: right;
+  }
+}

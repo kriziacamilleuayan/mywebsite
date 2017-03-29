@@ -1,0 +1,76 @@
+p{
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	line-height: 1.5rem;
+}
+
+hr {
+    padding: 0;
+    border: none;
+    border-top: medium double white;
+    color: #white;
+    text-align: center;
+}
+
+#about{
+	@include sectionhead;
+	@include sectionbody;
+	@include container;
+	@include responsiveimage;
+	@include row;
+	@include colsix;
+}
+
+#cats{
+	margin-top: 5px;
+	@extend #about;
+	@include colfour;
+	.col-4{
+		text-align: center;
+	}
+	.cats-img{
+		border-radius: 50%;
+		// height: 200px;
+		border: 5px dashed $pink;
+		width: 60%;
+		margin: 0 auto;
+	}
+	p{
+		text-align: center;
+	}
+	span{
+		font-family: 'Baloo Bhaina', cursive;
+		font-size: 20px;
+		color: darken($pink, 8)
+	}
+}
+
+#gallery{
+	@extend #about;
+	@include coltwo;
+	margin-top: 5px;
+	#photos{
+	  line-height: 0;
+	  column-count: 5;
+	  column-gap: 0px;  
+	}
+	img{
+		width: 100% !important;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
+// $list: 1200px 100px 800px 400px;
+// $list2: 4 3 2 1;
+// =media-count
+// @each $media in $list
+// @each $column in $list2
+
+// 	@media (max-width: #{$media}) {
+// 	  #photos {
+// 	  column-count: #{$column};
+// 	  }
+// 	}
+
+// map this

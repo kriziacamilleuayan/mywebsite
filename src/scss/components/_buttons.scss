@@ -1,0 +1,18 @@
+@mixin buttons{
+	.btn{
+		background-color: darken($pink, 8);
+		border-radius: 5px;
+		border: 2px solid white;
+		color: white;
+		font-size: 15px;
+		font-family: 'Baloo Bhaina', cursive;
+		padding: 0 10px;
+		&:hover{
+			background-color: white;
+			color: darken($pink, 8);
+			transition: 1s;
+			transition-timing-function: ease;
+		}
+	}	
+}
+

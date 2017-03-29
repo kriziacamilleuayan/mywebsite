@@ -1,0 +1,61 @@
+// row
+@mixin row {
+	.row::after {
+	    content: "";
+	    clear: both;
+	    display: block;
+	}
+}
+
+
+// grids
+@mixin colone{
+	.col-1{
+		float: left;
+		width: 8.33%;
+	}
+}
+
+@mixin coltwo{
+	.col-2{
+		float: left;
+		width: 16.66%;
+	}
+}
+
+@mixin colthree{
+	.col-3{
+		float: left;
+		width: 25%;
+	}
+}
+
+
+@mixin colfour{
+	.col-4{
+		float: left;
+		width: 33.33%;
+	}
+}
+
+@mixin colfive{
+	.col-5{
+		float: left;
+		width: 41.66%;
+	}
+}
+
+@mixin colsix{
+	.col-6{
+		float: left;
+		width: 50%;
+	}
+}
+
+@mixin coltwelve{
+	.col-12{
+		float: left;
+		width: 100%;
+	}
+}
+
